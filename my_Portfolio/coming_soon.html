@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #081b29;
+            color: #ededed;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .coming-container {
+            text-align: center;
+        }
+
+        .coming-title {
+            font-size: 80px;
+            font-weight: 800;
+            color: #00abf0;
+            text-shadow: 0 0 20px #00abf0, 0 0 40px #00abf0;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 20px #00abf0;
+            }
+            to {
+                text-shadow: 0 0 40px #00abf0, 0 0 70px #00abf0;
+            }
+        }
+
+        .subtext {
+            margin-top: 20px;
+            font-size: 25px;
+            opacity: 0.8;
+            animation: fadeIn 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="coming-container">
+        <h1 class="coming-title">COMING SOON</h1>
+        <p class="subtext">Notes are being prepared by Vipul...</p>
+    </div>
+
+</body>
+</html>
